@@ -41,3 +41,15 @@ def test_three():
     actual = fibonacci(3)
     #Assert
     assert actual == expected    
+
+def test_four():
+    """
+    this function tests the fibonacci sequence function when n=0
+    """
+    #Arrange
+    n=0
+    expected = 0
+    #Act
+    actual = fibonacci(0)
+    #Assert
+    assert actual == expected 
