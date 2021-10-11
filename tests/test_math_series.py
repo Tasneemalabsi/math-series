@@ -28,3 +28,16 @@ def test_two():
     actual = fibonacci(2)
     #Assert
     assert actual == expected
+
+
+def test_three():
+    """
+    this function tests the fibonacci sequence function when n=3
+    """
+    #Arrange
+    n=3
+    expected = 2
+    #Act
+    actual = fibonacci(3)
+    #Assert
+    assert actual == expected    
