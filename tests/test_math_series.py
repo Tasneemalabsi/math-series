@@ -16,3 +16,15 @@ def test_one():
     actual = fibonacci(1)
     #Assert
     assert actual == expected
+
+def test_two():
+    """
+    this function tests the fibonacci sequence function when n=2
+    """
+    #Arrange
+    n=2
+    expected = 1
+    #Act
+    actual = fibonacci(2)
+    #Assert
+    assert actual == expected
