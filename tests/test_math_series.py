@@ -68,7 +68,7 @@ def test_lucas_one():
 
 def test_lucas_two():
     """
-    this function tests the lucas sequence function when n=0
+    this function tests the lucas sequence function when n=1
     """
     #Arrange
     n=1
@@ -76,4 +76,16 @@ def test_lucas_two():
     #Act
     actual = lucas(1)
     #Assert
-    assert actual == expected     
+    assert actual == expected   
+
+def test_lucas_three():
+    """
+    this function tests the lucas sequence function when n=2
+    """
+    #Arrange
+    n= 2
+    expected = 1
+    #Act
+    actual = lucas(2)
+    #Assert
+    assert actual == expected 
