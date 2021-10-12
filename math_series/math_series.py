@@ -19,4 +19,14 @@ def lucas(n):
     if (n == 1):
         return 1
     else:
-	    return (lucas(n-1) + lucas(n-2))                
+	    return (lucas(n-1) + lucas(n-2)) 
+
+def sum_series(value, num1=0, num2=1):
+
+    if value == 0:
+        return num1
+    if value == 1:
+        return num2
+    
+    return sum_series(value-1, num1, num2) + sum_series(value - 2, num1, num2)
+                  

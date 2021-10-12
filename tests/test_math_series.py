@@ -1,5 +1,5 @@
 from math_series import __version__
-from math_series.math_series import fibonacci, lucas
+from math_series.math_series import fibonacci, lucas, sum_series
 
 
 def test_version():
@@ -100,4 +100,13 @@ def test_lucas_four():
     #Act
     actual = lucas(3)
     #Assert
-    assert actual == expected 
+    assert actual == expected
+
+def test_sum_one():
+    #Arrange
+    n= 0
+    expected = 0
+    #Act
+    actual = sum_series(0)
+    #Assert
+    assert actual == expected     
