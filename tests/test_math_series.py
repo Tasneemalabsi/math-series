@@ -84,8 +84,20 @@ def test_lucas_three():
     """
     #Arrange
     n= 2
-    expected = 1
+    expected = 3
     #Act
     actual = lucas(2)
+    #Assert
+    assert actual == expected 
+
+def test_lucas_four():
+    """
+    this function tests the lucas sequence function when n=3
+    """
+    #Arrange
+    n= 3
+    expected = 4
+    #Act
+    actual = lucas(3)
     #Assert
     assert actual == expected 
