@@ -66,3 +66,14 @@ def test_lucas_one():
     #Assert
     assert actual == expected 
 
+def test_lucas_two():
+    """
+    this function tests the lucas sequence function when n=0
+    """
+    #Arrange
+    n=1
+    expected = 1
+    #Act
+    actual = lucas(1)
+    #Assert
+    assert actual == expected     
