@@ -119,3 +119,12 @@ def test_sum_two():
     actual = sum_series(1)
     #Assert
     assert actual == expected
+
+def test_sum_three():
+    #Arrange
+    n= 2
+    expected = 1
+    #Act
+    actual = sum_series(2)
+    #Assert
+    assert actual == expected
