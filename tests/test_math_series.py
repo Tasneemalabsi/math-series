@@ -1,11 +1,11 @@
 from math_series import __version__
-from math_series.math_series import fibonacci
+from math_series.math_series import fibonacci, lucas
 
 
 def test_version():
     assert __version__ == '0.1.0'
 
-def test_one():
+def test_fibonacci_one():
     """
     this function tests the fibonacci sequence function when n=1
     """
@@ -17,7 +17,7 @@ def test_one():
     #Assert
     assert actual == expected
 
-def test_two():
+def test_fibonacci_two():
     """
     this function tests the fibonacci sequence function when n=2
     """
@@ -30,7 +30,7 @@ def test_two():
     assert actual == expected
 
 
-def test_three():
+def test_fibonacci_three():
     """
     this function tests the fibonacci sequence function when n=3
     """
@@ -42,7 +42,7 @@ def test_three():
     #Assert
     assert actual == expected    
 
-def test_four():
+def test_fibonacci_four():
     """
     this function tests the fibonacci sequence function when n=0
     """
@@ -53,3 +53,16 @@ def test_four():
     actual = fibonacci(0)
     #Assert
     assert actual == expected 
+
+def test_lucas_one():
+    """
+    this function tests the lucas sequence function when n=0
+    """
+    #Arrange
+    n=0
+    expected = 2
+    #Act
+    actual = lucas(0)
+    #Assert
+    assert actual == expected 
+
